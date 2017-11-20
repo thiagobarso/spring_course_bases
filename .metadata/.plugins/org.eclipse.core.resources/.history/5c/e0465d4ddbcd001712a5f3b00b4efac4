@@ -1,0 +1,7 @@
+package treinamento.spring;
+
+public class OlaMundo {
+	
+	private String mensgaem = "Olá";	
+
+}

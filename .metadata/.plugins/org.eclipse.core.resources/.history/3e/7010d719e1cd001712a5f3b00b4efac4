@@ -1,0 +1,15 @@
+package treinamento.spring.configuracao;
+
+import org.springframework.context.annotation.Configuration;
+
+import treinamento.spring.OlaMundo;
+
+@Configuration
+public class Configuracao {
+	
+	public OlaMundo olaMundo() {
+		return new OlaMundo(mensagem);
+
+	}
+
+}

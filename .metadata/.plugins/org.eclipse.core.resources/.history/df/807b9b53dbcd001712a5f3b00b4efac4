@@ -1,0 +1,17 @@
+package treinamento.spring;
+
+public class OlaMundo {
+	
+	private String mensagem = "Olá";
+
+	public String getMensgaem() {
+		return mensgaem;
+	}
+
+	public void setMensgaem(String mensgaem) {
+		this.mensgaem = mensgaem;
+	}
+	
+	
+
+}

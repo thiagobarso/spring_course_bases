@@ -1,0 +1,13 @@
+package treinamento.spring.aspecto.repositorio;
+
+import java.util.Arrays;
+import java.util.List;
+
+import treinamento.spring.aspecto.entidades.Usuario;
+
+public class UsuarioRepositorio {
+
+	public List<Usuario> listar(){
+		return Arrays.asList(new Usuario(1l,"admin"));
+	}
+}

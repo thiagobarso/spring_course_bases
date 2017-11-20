@@ -1,0 +1,26 @@
+package treinamento.spring;
+
+import javax.annotation.PostConstruct;
+
+public class OlaMundo {
+	
+	private String mensagem = "Olá";
+	
+	public OlaMundo(String mensagem) {
+		super();
+		this.mensagem = mensagem;
+	}
+
+	public String getMensagem() {
+		return mensagem;
+	}
+
+	public void setMensagem(String mensagem) {
+		this.mensagem = mensagem;
+	}
+	
+	private void init() {
+		System.out.println("Inicializado o bean");
+	}
+
+}

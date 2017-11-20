@@ -1,0 +1,16 @@
+package treinamento.spring.aspecto.config.aop;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AntesDoMetodo {
+	
+	@Before("execution(* * treinamento.spring.aspecto.* (..))")
+	public void antesDoMetodo() {
+		System.out.println("Antes do Método...");
+	}
+
+}

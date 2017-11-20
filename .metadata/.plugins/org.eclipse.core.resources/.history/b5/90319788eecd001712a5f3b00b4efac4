@@ -1,0 +1,21 @@
+package treinamento.spring.configuracao;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import treinamento.spring.OlaMundo;
+
+@Configuration
+@ComponentScan("treinamento.spring")
+@PropertySource({"classpath:aplicacao.properties"})
+public class Configuracao {
+	
+	@Bean
+	public OlaMundo olaMundo() {
+		return new OlaMundo("Anotação");
+
+	}
+
+}

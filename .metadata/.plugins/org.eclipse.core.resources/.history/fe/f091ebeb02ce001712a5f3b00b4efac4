@@ -1,0 +1,16 @@
+package treinamento.spring.aspecto.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import treinamento.spring.aspecto.entidades.Usuario;
+
+@Service
+public class UsuarioService {
+	
+	public List<Usuario> listar(){
+		return null;
+	}
+
+}

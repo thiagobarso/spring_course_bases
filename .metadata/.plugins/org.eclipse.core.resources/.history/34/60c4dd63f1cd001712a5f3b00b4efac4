@@ -1,0 +1,18 @@
+package treinamento.spring.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import treinamento.spring.OlaMundo;
+
+@Component
+public class Mensageria {
+	
+	@Autowired
+	private OlaMundo olaMundo;
+	
+	public void enviar() {
+		System.out.println(olaMundo.getMensagem());
+	}
+
+}

@@ -1,0 +1,11 @@
+package treinamento.spring.beans;
+
+@Component
+public class Destino implements Fonte{
+
+	@Override
+	public String getTipo() {
+		return Destino.class;
+	}
+
+}

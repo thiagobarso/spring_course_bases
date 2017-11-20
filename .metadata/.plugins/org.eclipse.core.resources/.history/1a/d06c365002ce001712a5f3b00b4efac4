@@ -1,0 +1,5 @@
+package treinamento.spring.aspecto.entidades;
+
+public class Usuario {
+
+}

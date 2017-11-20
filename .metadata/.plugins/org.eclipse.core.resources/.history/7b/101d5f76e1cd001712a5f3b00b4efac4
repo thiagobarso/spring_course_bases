@@ -1,0 +1,14 @@
+package treinamento.spring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("beans.xml");
+		OlaMundo ola = contexto.getBean(OlaMundo.class);
+		OlaMundo ola1 = contexto.getBean(OlaMundo.class);
+		System.out.println("É Singleton? " + (ola == ola1));
+		contexto.close();
+	}
+}

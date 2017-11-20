@@ -1,0 +1,9 @@
+package treinamento.spring.aspecto;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

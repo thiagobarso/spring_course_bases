@@ -1,0 +1,12 @@
+package treinamento.spring.beans;
+
+@Component
+public class Destino implements Fonte{
+
+	@Override
+	public String getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

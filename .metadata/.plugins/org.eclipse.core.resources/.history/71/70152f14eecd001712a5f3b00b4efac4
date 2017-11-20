@@ -1,0 +1,19 @@
+package treinamento.spring.configuracao;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import treinamento.spring.OlaMundo;
+
+@Configuration
+@ComponentScan("treinamento.spring")
+public class Configuracao {
+	
+	@Bean
+	public OlaMundo olaMundo() {
+		return new OlaMundo("Anotação");
+
+	}
+
+}

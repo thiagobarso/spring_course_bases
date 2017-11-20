@@ -1,0 +1,19 @@
+package treinamento.spring.aspecto;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import treinamento.spring.aspecto.config.Configuracao;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		AnnotationConfigApplicationContext contexto = new AnnotationConfigApplicationContext(Configuracao.class);
+		contexto.register(Configuracao.class);
+		
+		contexto.close();
+		
+		
+	}
+
+}

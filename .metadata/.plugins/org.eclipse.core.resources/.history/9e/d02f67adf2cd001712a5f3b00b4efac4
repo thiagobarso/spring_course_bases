@@ -1,0 +1,24 @@
+package treinamento.spring.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+import treinamento.spring.OlaMundo;
+
+@Component
+public class Mensageria {
+	
+	@Autowired
+	@Qualifier("x")
+	private Fonte fonte;
+	
+	public Mensageria(Fonte origem) {
+		this.origem = origem;
+	}
+	
+	public void enviar() {
+		System.out.println("Enviando mensagem: " + fonte.getTipo());
+	}
+
+}

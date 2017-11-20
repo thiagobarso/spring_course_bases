@@ -1,0 +1,10 @@
+package treinamento.spring;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext contexto = new ClassPathXmlApplicationContext("beans.xml");
+	}
+}

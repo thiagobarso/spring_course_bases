@@ -1,0 +1,5 @@
+package treinamento.spring.beans;
+
+public interface Fonte {
+
+}

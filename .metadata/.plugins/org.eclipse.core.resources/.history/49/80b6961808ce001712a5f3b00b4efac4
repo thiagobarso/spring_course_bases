@@ -1,0 +1,22 @@
+package treinamento.spring.aspecto.config.aop;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class AntesDoMetodo {
+	
+	@Before("execution(* treinamento.spring.aspecto..*.* (..))")
+	public void antesDoMetodo(JoinPoint point) {
+		System.out.println("Antes do Método..." + point.getTarget().getClass().getName());
+	}
+	
+	@After("execution(* treinamento.spring.aspecto.repositorio.*.* (..))")
+	public void depoisDoMetodo(JoinPoint point) {
+		System.out.println("Depois do Método..." + point.getTarget().getClass().getName());
+	}
+
+}

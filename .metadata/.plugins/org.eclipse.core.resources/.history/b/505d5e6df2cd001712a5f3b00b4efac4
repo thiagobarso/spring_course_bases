@@ -1,0 +1,18 @@
+package treinamento.spring.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import treinamento.spring.OlaMundo;
+
+@Component
+public class Mensageria {
+	
+	@Autowired
+	private Fonte fonte;
+	
+	public void enviar() {
+		System.out.println("Enviando mensagem: " + fonte.getTipo());
+	}
+
+}

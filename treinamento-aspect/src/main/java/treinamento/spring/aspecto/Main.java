@@ -1,0 +1,16 @@
+package treinamento.spring.aspecto;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import treinamento.spring.aspecto.config.Configuracao;
+import treinamento.spring.aspecto.service.UsuarioService;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext contexto = new AnnotationConfigApplicationContext(Configuracao.class);
+		UsuarioService usuarioService = contexto.getBean(UsuarioService.class);
+		usuarioService.listar().forEach(System.out::println);
+	}
+
+}
