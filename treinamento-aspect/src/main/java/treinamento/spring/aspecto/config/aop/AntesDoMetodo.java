@@ -1,6 +1,7 @@
 package treinamento.spring.aspecto.config.aop;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -22,8 +23,11 @@ public class AntesDoMetodo {
 	}
 
 	@Around("bean(usuarioRepositorio)")
-	public void around() {
-
+	public Object around(ProceedingJoinPoint j) throws Throwable {
+		System.out.println("Around inicio... ");
+		Object retorno = j.proceed();
+		System.out.println("Around fim... ");
+		return retorno;
 	}
 
 }
