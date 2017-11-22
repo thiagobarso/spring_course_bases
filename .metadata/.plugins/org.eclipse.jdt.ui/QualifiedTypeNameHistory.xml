@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="treinamento.spring.beans.Mensageria"/>
-<fullyQualifiedTypeName name="treinamento.spring.beans.Fonte"/>
-<fullyQualifiedTypeName name="treinamento.spring.beans.Destino"/>
-<fullyQualifiedTypeName name="treinamento.spring.beans.Origem"/>
-<fullyQualifiedTypeName name="treinamento.spring.aspecto.config.Configuracao"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="treinamento.spring.aspecto.service.UsuarioService"/>
-<fullyQualifiedTypeName name="org.springframework.context.annotation.EnableAspectJAutoProxy"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
-<fullyQualifiedTypeName name="treinamento.spring.aspecto.entidades.Usuario"/>
 <fullyQualifiedTypeName name="treinamento.spring.aspecto.repositorio.UsuarioRepositorio"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
@@ -53,11 +41,23 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="treinamento.springmvc.entidade.Usuario"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanWrapperImpl"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapperResultSetExtractor"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.BeanPropertyRowMapper"/>
 <fullyQualifiedTypeName name="treinamento.jdbc.repositorio.UsuarioDAO"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="treinamento.jpa.configuracao.ConfiguracaoDoBancoJPA"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="treinamento.jpa.entidades.Produto"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.PlatformTransactionManager"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.EnableTransactionManagement"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 </qualifiedTypeNameHistroy>
