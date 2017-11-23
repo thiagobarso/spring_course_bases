@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="springmvc"/>
+<aop-project name="springcloudproject"/>
+<aop-project name="springcloudeureka"/>
+<aop-project name="springcloudweb"/>
+<aop-project name="springcloudribbon"/>
 </aop-reference-model>
